@@ -1,4 +1,4 @@
-      
+     
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -586,7 +586,7 @@ body.outlook p {
   }
 
   table[class="body"] img.item {
-    width: 50% !important;
+    width: 100% !important;
     height: auto !important;
     margin-right: 5px;
   }
@@ -692,3 +692,77 @@ body.outlook p {
     display: inherit !important;
   }
 }
+
+/* Custom styles */
+.meta {
+  display:inline-block;
+  font-size:10px;
+  font-weight:bold;
+  padding:5px;
+  margin-top:4px;
+  color: #fff;
+  line-height: 1;
+}
+
+.meta.red {
+  background-color:#FF3800;
+}
+
+.meta.blue {
+  background-color:#4F65EF;
+}
+
+.meta.green {
+  background-color:#7AC943;
+}
+
+.meta.orange {
+  background-color:#FFC943;
+}
+
+.meta.pink {
+  background-color:#ED1E79;
+}
+
+.meta.darkblue {
+  background-color:#2E3192;
+}
+
+.meta.black {
+  background-color:#000;
+}
+
+.left {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    width: 49%;
+    float: right;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  .meta {
+    font-size: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

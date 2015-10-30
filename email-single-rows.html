@@ -7,7 +7,8 @@
     <!--<link rel="stylesheet" href="ink.css">  For testing only -->
 
     <style type="text/css">
-      
+
+     
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -595,7 +596,7 @@ body.outlook p {
   }
 
   table[class="body"] img.item {
-    width: 50% !important;
+    width: 100% !important;
     height: auto !important;
     margin-right: 5px;
   }
@@ -702,7 +703,69 @@ body.outlook p {
   }
 }
 
-      
+/* Custom styles */
+.meta {
+  display:inline-block;
+  font-size:10px;
+  font-weight:bold;
+  padding:5px;
+  margin-top:4px;
+  color: #fff;
+  line-height: 1;
+}
+
+.meta.red {
+  background-color:#FF3800;
+}
+
+.meta.blue {
+  background-color:#4F65EF;
+}
+
+.meta.green {
+  background-color:#7AC943;
+}
+
+.meta.orange {
+  background-color:#FFC943;
+}
+
+.meta.pink {
+  background-color:#ED1E79;
+}
+
+.meta.darkblue {
+  background-color:#2E3192;
+}
+
+.meta.black {
+  background-color:#000;
+}
+
+.left {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    width: 49%;
+    float: right;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  .meta {
+    font-size: 8px;
+  }
+}
+
+
+
+
+ 
     </style>
   </head>
 
@@ -796,8 +859,14 @@ body.outlook p {
                         <tr>
                           <td class="center">
                             <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban1.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Билеты Бишкек — Нью-Йорк — Бишкек на ноябрь <strong>за 451$</strong></p>
+                              <div class="left">
+                                <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban1.png" alt="Kyrgyz Concept" style="width:100%;" />
+                                <span class="meta red">НАХОДКА ДНЯ</span>
+                              </div>
+                              <div class="right">
+                                <p style="text-align:center;">Билеты Бишкек — Нью-Йорк — Бишкек на ноябрь <strong>за 451$</strong></p>
+                              </div>
+                              
                             </a>
                           </td>
                           <td class="expander"></td>
@@ -809,8 +878,15 @@ body.outlook p {
                         <tr>
                           <td class="center">
                             <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban2.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Бизнес-тур по Силиконовой долине в ноябре: Twitter, Google, Apple, Zappos и Linked-In</p>
+                              <div class="left">
+                                <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban2.png" alt="Kyrgyz Concept" style="width:100%;" />
+                              <span class="meta blue">ПРЕДЛОЖЕНИЕ</span>
+                              </div>
+                              <div class="right">
+                                <p style="text-align:center;">Бизнес-тур по Силиконовой долине в ноябре: Twitter, Google, Apple, Zappos и Linked-In</p>
+                              </div>
+                              
+                              
                             </a>
                           </td>
                           <td class="expander"></td>
@@ -822,96 +898,13 @@ body.outlook p {
                         <tr>
                           <td class="center">
                             <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban3.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Как изменятся цены Pegasus Asia после переименования в Air Manas</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <table class="row">
-                  <tr>
-                    <td class="wrapper">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban4.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Wi-Fi в самолётах: где найти и сколько стоит</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban5.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Бизнес-тур по Силиконовой долине в ноябре: Twitter, Google, Apple, Zappos и Linked-In</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper last">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban6.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Как изменятся цены Pegasus Asia после переименования в Air Manas</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row">
-                  <tr>
-                    <td class="wrapper">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban7.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Билеты Бишкек — Нью-Йорк — Бишкек на ноябрь 
-за 451$</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban8.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Бизнес-тур по Силиконовой долине в ноябре: Twitter, Google, Apple, Zappos и Linked-In</p>
-                            </a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper last">
-                      <table class="four columns">
-                        <tr>
-                          <td class="center">
-                            <a href="#" target="_blank" style="">
-                              <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban9.png" alt="Kyrgyz Concept" style="width:100%;" />
-                              <p style="text-align:center;">Как изменятся цены Pegasus Asia после переименования в Air Manas</p>
+                              <div class="left">
+                                <img class="item" src="https://raw.githubusercontent.com/Chyngyz/kc-email/master/images/ban3.png" alt="Kyrgyz Concept" style="width:100%;" />
+                                <span class="meta green">НОВОСТЬ</span>
+                              </div>
+                              <div class="right">
+                                <p style="text-align:center;">Как изменятся цены Pegasus Asia после переименования в Air Manas</p>
+                              </div>
                             </a>
                           </td>
                           <td class="expander"></td>
